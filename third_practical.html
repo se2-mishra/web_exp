@@ -1,0 +1,64 @@
+<html>
+<title>Registration Form</title>
+<head>
+<h1 align = center><font color = red>Registration form</font></h1>
+</head>
+<body bgcolor="yellow">
+<form method=post>
+<br></br>
+<label>Name:</label>
+<input type="text"  name="Name" size="40"/><br></br>
+
+<b>Enter UserName </b> <input type=text name=uname size=10 maxlength=7 placeholder="e.g.ABC"><br></br>
+<b>Enter Password</b> <input type = password name=pwd><br></br>
+<b>Enter Email ID</b><input type = email name=myemail><br></br>
+
+<b>Gender:</b>
+<input type = radio name=gender  30px; checked> Male
+<input type = radio name=gender> Female
+<br>
+<b>Hobbies-</b>
+<br>
+<input type = checkbox name=sing>Singing
+<br>
+<input type = checkbox name=dance checked>Dancing
+<br>
+<input type = checkbox name=act>Acting
+<br>
+<b>Date of Birth: </b> <input type = date name = dob>
+<br>
+<b>Place of Birth</b>
+<br>
+<select name=pob>
+<option></option>
+<option>Bhopal</option>
+<option selected>Indore</option>
+<option>Gwalior</option>
+<option>Ujjain</option>
+</select>
+<br>
+<b>Place of Work</b>
+<br>
+<select name=pow size=5 multiple>
+<option></option>
+<option>Bhopal</option>
+<option selected>Indore</option>
+<option>Gwalior</option>
+<option>Ujjain</option>
+</select>
+<br>
+Upload PIC <input type = file name=mypic>
+<br>
+<b>About Yourself</b>
+<br>
+<textarea name=abtme rows=10 cols=15>Myself...</textarea>
+<br>
+
+<b>Enter Website Name</b><input type = url name=myweb>
+<br>
+<input type = submit>
+<input type = reset>
+<input type = button value = Print onclick=print()>
+</form>
+</body>
+</html>

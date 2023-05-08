@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pop-up Box</title>
+	<style>
+		h1{
+			color:green;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		
+		<!-- Alert box function --> 
+		<script>
+			function abAlert() {
+				alert("An Online HINT "
+							+ "Portal for new world");
+			}
+    
+        <!-- Prompt box function -->
+        
+            function abscrPrompt() {
+				var x = prompt("Enter your mail here : ");
+				document.write("Your ID : " + x);
+			}
+
+        <!-- Confirm box function --> 
+
+            function belowConfirm() {
+				var x;
+				if (confirm("Press a button!") == true) {
+					x = "OK pressed!";
+				} else {
+					x = "Cancel!";
+				}
+				document.getElementById("abcd").innerHTML = x;
+			}
+		</script>
+    <br>
+    <br>
+    <center>
+    <h1>Alert!!!</h1>
+
+    <h3>Alert Box</h3>
+    <button onclick="abAlert()">
+        Click here for alert box
+    </button>
+
+		<h1>Prompt!!!</h1>
+
+		<h3>Prompt Box</h3>
+
+		<input type="button" onclick="abscrPrompt();"
+		value="Click here for Prompt box"/>
+
+    <br>
+    <br>
+
+		<h1>Confirmation!!!</h1>
+
+		<h3>Confirm Box</h3>
+
+		<button onclick="belowConfirm()">
+			Click here for Confirm box
+		</button>
+
+		<p id="abcd"></p>
+		
+	</center>
+
+
+</body>
+
+</html>
